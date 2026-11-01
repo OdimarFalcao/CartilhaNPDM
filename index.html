@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Museu vai à escola — Cartilha MIPA</title>
+  <meta name="description" content="Cartilha digital do Museu Itinerante de Paleontologia e Arqueologia (MIPA) — LABBAT/NPDM/UFC. Observar, aprender e respeitar!">
+
+  <!-- Prévia ao compartilhar no WhatsApp, Instagram etc. -->
+  <meta property="og:type" content="book">
+  <meta property="og:title" content="Museu vai à escola — Observar, aprender e respeitar!">
+  <meta property="og:description" content="Cartilha digital do Museu Itinerante de Paleontologia e Arqueologia (MIPA) — NPDM/UFC.">
+  <meta property="og:image" content="https://odimarfalcao.github.io/CartilhaNPDM/img/compartilhar.jpg">
+  <meta property="og:url" content="https://odimarfalcao.github.io/CartilhaNPDM/">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+  <header class="topo">
+    <h1 class="titulo">
+      <span class="t-museu">Museu</span>
+      <span class="t-vai">vai à <span class="c1">e</span><span class="c2">s</span><span class="c3">c</span><span class="c4">o</span><span class="c5">l</span><span class="c1">a</span></span>
+    </h1>
+    <p class="subtitulo">Observar, aprender e respeitar!</p>
+  </header>
+
+  <main>
+    <!-- O leitor: cada .pagina vira uma folha do livro -->
+    <div class="palco">
+      <div id="livro" class="livro" aria-label="Cartilha Museu vai à escola">
+        <div class="pagina" data-density="hard"><img src="paginas/pagina-01.webp" alt="Capa: Museu vai à escola — Observar, aprender e respeitar!"></div>
+        <div class="pagina"><img src="paginas/pagina-02.webp" alt="Ficha técnica da cartilha"></div>
+        <div class="pagina"><img src="paginas/pagina-03.webp" alt="Apresentação e contexto da obra"></div>
+        <div class="pagina"><img src="paginas/pagina-04.webp" alt="Conheça a turma: Dra. Bete, Profa. Adelania, Carlinhos, Bia, Paulinho, Lucas, Pedro" loading="lazy"></div>
+        <div class="pagina"><img src="paginas/pagina-05.webp" alt="Conheça a turma: Sebastian, Seu Odorico, Allysson, Lorena" loading="lazy"></div>
+        <div class="pagina"><img src="paginas/pagina-06.webp" alt="História em quadrinhos: O museu vem aí!" loading="lazy"></div>
+        <div class="pagina"><img src="paginas/pagina-07.webp" alt="História em quadrinhos: Tem lugar pra todo mundo" loading="lazy"></div>
+        <div class="pagina"><img src="paginas/pagina-08.webp" alt="História em quadrinhos: Quando nasce um cientista" loading="lazy"></div>
+        <div class="pagina"><img src="paginas/pagina-09.webp" alt="História em quadrinhos: Comunicar é incluir — alfabeto em Libras" loading="lazy"></div>
+        <div class="pagina"><img src="paginas/pagina-10.webp" alt="História em quadrinhos: Olhar atento, grandes ideias" loading="lazy"></div>
+        <div class="pagina"><img src="paginas/pagina-11.webp" alt="História em quadrinhos: Muito para contar!" loading="lazy"></div>
+        <div class="pagina"><img src="paginas/pagina-12.webp" alt="História em quadrinhos: Um objeto, muitas histórias" loading="lazy"></div>
+        <div class="pagina"><img src="paginas/pagina-13.webp" alt="Apoio e realização: UFC, NPDM, LABBAT, MIPA, MEC, FNDCT, MCTI, Pop Ciência, CNPq" loading="lazy"></div>
+        <div class="pagina" data-density="hard"><img src="paginas/pagina-14.webp" alt="A ciência continua por aqui: QR codes do MIPA, LABBAT, PPGMT, PREX e UFC" loading="lazy"></div>
+      </div>
+    </div>
+
+    <nav class="controles" aria-label="Navegação da cartilha">
+      <button id="anterior" class="btn" type="button" aria-label="Página anterior">‹</button>
+      <span id="contador" class="contador" aria-live="polite">Capa</span>
+      <button id="proxima" class="btn" type="button" aria-label="Próxima página">›</button>
+    </nav>
+
+    <div class="acoes">
+      <a class="btn-acao primario" href="cartilha-museu-vai-a-escola.pdf" download>Baixar PDF <small>(5,5 MB)</small></a>
+      <button id="tela-cheia" class="btn-acao" type="button">Tela cheia</button>
+    </div>
+
+    <p class="dica">Arraste o canto da página, use as setas do teclado ou toque nas laterais para folhear.</p>
+  </main>
+
+  <footer class="rodape">
+    <p><strong>MIPA</strong> — Museu Itinerante de Paleontologia e Arqueologia · LABBAT · NPDM · Universidade Federal do Ceará</p>
+    <p><a href="https://www.instagram.com/mipa.npdm.ufc/">@mipa.npdm.ufc</a> · <a href="mailto:mipa@ufc.br">mipa@ufc.br</a></p>
+  </footer>
+
+  <!-- Biblioteca do efeito de virar página (StPageFlip, licença MIT) -->
+  <script src="vendor/page-flip.browser.js"></script>
+  <script src="js/leitor.js"></script>
+</body>
+</html>
