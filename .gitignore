@@ -1,0 +1,8 @@
+# cache da extensão Salesforce do VS Code
+.sf/
+.sfdx/
+
+# arquivos do sistema
+Thumbs.db
+Desktop.ini
+.DS_Store
